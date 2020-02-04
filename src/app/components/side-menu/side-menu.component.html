@@ -1,0 +1,57 @@
+<div style="margin-top: 2px">
+    <mat-icon class="menu-logo">account_balance</mat-icon>
+
+    <div class="menu-title2 menu-item" (click)="dashboard()" style="cursor: pointer; padding-left: 0px;">
+        <mat-icon class="menu-icon">dashboard</mat-icon>
+        DASHBOARD
+    </div>
+
+    <div class="menu-title">
+        COMPANY / SECTORS
+    </div>
+
+    <div class="menu-item" (click)="createCompany()">
+        <mat-icon class="menu-icon">home_work</mat-icon>
+        Create company
+    </div>
+    <div class="menu-item" (click)="listCompanies()">
+        <mat-icon class="menu-icon">apartment</mat-icon>
+        List companies
+    </div>
+    <div class="menu-item" (click)="createSector()">
+        <mat-icon class="menu-icon">widgets</mat-icon>
+        Create sector
+    </div>
+    <div class="menu-item" (click)="listSectors()">
+        <mat-icon class="menu-icon">category</mat-icon>
+        List sectors
+    </div>
+
+
+    <div class="menu-title">
+        TRANSACTIONS
+    </div>
+
+    <div class="menu-item" (click)="buySellShares()">
+        <mat-icon class="menu-icon">work</mat-icon>
+        Buy / Sell
+    </div>
+    <div class="menu-item" (click)="transactionHistory()">
+        <mat-icon class="menu-icon">assessment</mat-icon>
+        View history
+    </div>
+
+    <div class="menu-title">
+        HOLDINGS
+    </div>
+
+    <div class="menu-item" (click)="holdings()">
+        <mat-icon class="menu-icon">donut_small</mat-icon>
+        View current holdings
+    </div>
+    <div class="menu-item" (click)="updatePrices()">
+        <mat-icon class="menu-icon">receipt</mat-icon>
+        Update stock prices
+    </div>
+
+</div>

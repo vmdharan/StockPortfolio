@@ -1,0 +1,43 @@
+<mat-card class="content">
+    <h2>Holdings</h2>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 fw-table">
+        <ng-container matColumnDef="code">
+            <th mat-header-cell *matHeaderCellDef>Code</th>
+            <td mat-cell *matCellDef="let element">{{element.Code}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef>Quantity</th>
+            <td mat-cell *matCellDef="let element">{{element.Quantity}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="purchase_price">
+            <th mat-header-cell *matHeaderCellDef>Purchase price</th>
+            <td mat-cell *matCellDef="let element">{{element.PurchasePrice}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="current_price">
+            <th mat-header-cell *matHeaderCellDef>Current price</th>
+            <td mat-cell *matCellDef="let element">{{element.CurrentPrice}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="value">
+            <th mat-header-cell *matHeaderCellDef>Value</th>
+            <td mat-cell *matCellDef="let element">{{element.Value}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="change">
+            <th mat-header-cell *matHeaderCellDef>Change</th>
+            <td mat-cell *matCellDef="let element">{{element.Change}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="change_percent">
+                <th mat-header-cell *matHeaderCellDef>Change (%)</th>
+                <td mat-cell *matCellDef="let element">{{element.ChangePercent}}</td>
+            </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</mat-card>

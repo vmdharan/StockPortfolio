@@ -1,0 +1,20 @@
+<mat-card class="content">
+    <h2>Create sector</h2>
+
+    <div class="input-line">
+        <div class="input-label">Name</div>
+        <input class="input-text" [(ngModel)]="sectorName" />
+    </div>
+
+    <div class="input-line">
+            <div class="input-label">Code</div>
+            <input class="input-text" [(ngModel)]="sectorCode" />
+        </div>
+
+    <div class="input-line">
+        <div class="input-label">Description</div>
+        <textarea class="input-textarea" [(ngModel)]="sectorDesc" ></textarea>
+    </div>
+
+    <input type="button" class="input-btn" value="Save" (click)="saveSector()" />
+</mat-card>

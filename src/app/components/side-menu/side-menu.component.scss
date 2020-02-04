@@ -1,0 +1,41 @@
+.menu-title {
+    font-size: 14px !important;
+    font-family: 'Lucida Sans' !important;
+    color: #1dfa67;
+    margin: 16px 16px !important;
+}
+
+.menu-title2 {
+    font-size: 14px !important;
+    font-family: 'Lucida Sans' !important;
+    color: white;
+    padding: 16px !important;
+    margin: 16px 4px !important;
+}
+
+.menu-item {
+    color: white !important;
+    padding: 16px;
+    margin: 0px 4px;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+.menu-item:hover {
+    background-color: #252438;
+    color: #67ddac !important;
+    cursor: pointer;
+    border-left: 5px solid #67ddac;
+}
+
+.menu-icon {
+    vertical-align: middle;
+    margin: 0px 8px;
+    padding-right: 8px;
+}
+
+.menu-logo {
+    margin-left: 80px;
+    color: white;
+    font-size: 72px;
+}

@@ -1,0 +1,50 @@
+<mat-card class="content">
+    <h2>Buy / Sell Shares</h2>
+
+    <div class="input-line">
+        <div class="input-label">Name</div>
+        <input class="input-text" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Code</div>
+        <input class="input-text" [(ngModel)]="companyCode" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Date</div>
+        <input class="input-text" [(ngModel)]="transactionDate" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Buy / Sell</div>
+        <input class="input-text" [(ngModel)]="transactionType" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Quantity</div>
+        <input class="input-text" [(ngModel)]="quantity" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Price</div>
+        <input class="input-text" [(ngModel)]="price" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Value</div>
+        <input class="input-text" [(ngModel)]="value" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Brokerage</div>
+        <input class="input-text" [(ngModel)]="brokerage" />
+    </div>
+
+    <div class="input-line">
+        <div class="input-label">Total</div>
+        <input class="input-text" [(ngModel)]="total" />
+    </div>
+
+    <input type="button" class="input-btn" value="Save" (click)="saveTransaction()" />
+</mat-card>

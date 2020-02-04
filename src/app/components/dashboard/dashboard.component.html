@@ -1,0 +1,61 @@
+<div>
+    <div style="display: flex; flex-direction: row;">
+        <mat-card style="margin: 24px; padding: 0; flex: 1">
+            <score-card [score]="sc1.score" [info]="sc1.info" [bgColor]="sc1.bgColor"></score-card>
+        </mat-card>
+
+        <mat-card style="margin: 24px; padding: 0; flex: 1">
+            <score-card [score]="sc2.score" [info]="sc2.info" [bgColor]="sc2.bgColor"></score-card>
+        </mat-card>
+
+        <mat-card style="margin: 24px; padding: 0; flex: 1">
+            <score-card [score]="sc3.score" [info]="sc3.info" [bgColor]="sc3.bgColor"></score-card>
+        </mat-card>
+
+        <mat-card style="margin: 24px; padding: 0; flex: 1">
+            <score-card [score]="sc4.score" [info]="sc4.info" [bgColor]="sc4.bgColor"></score-card>
+        </mat-card>
+
+        <mat-card style="margin: 24px; padding: 0; flex: 1">
+            <score-card [score]="sc5.score" [info]="sc5.info" [bgColor]="sc5.bgColor"></score-card>
+        </mat-card>
+    </div>
+
+    <div style="display: flex; flex-direction: row;">
+        <mat-card class="content" style="flex: 38%;">
+            <div class="chart">
+                <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+                    [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"
+                    [plugins]="lineChartPlugins" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+            </div>
+        </mat-card>
+
+        <mat-card class="content" style="flex: 32%;">
+            <div class="chart">
+                <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+                    [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors"
+                    [legend]="pieChartLegend" >
+                </canvas>
+            </div>
+        </mat-card>
+
+        <mat-card class="content" style="flex: 30%">
+            <b>Upcoming dividends</b>
+        </mat-card>
+    </div>
+
+    <div style="display: flex; flex-direction: row;">
+        <mat-card class="content" style="flex: 60%; height: 240px;">
+            <b>Recent transactions</b>
+        </mat-card>
+        
+        <mat-card class="content" style="flex: 20%; height: 240px;">
+            <b>Top 3 sectors bought</b>
+        </mat-card>
+        
+        <mat-card class="content" style="flex: 20%; height: 240px;">
+            <b>Top 3 sectors sold</b>
+        </mat-card>
+    </div>
+</div>

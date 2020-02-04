@@ -1,0 +1,15 @@
+.main-container {
+    display: flex; 
+    flex-direction: row;
+    height: 100%;
+}
+
+.side-menu {
+    background: linear-gradient(-180deg, #1f2024, #515a86) !important;
+    flex: 14%;
+    min-width: 240px;
+}
+
+.right-panel {
+    flex: 86%;
+}
